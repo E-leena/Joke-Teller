@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #45badd;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(robot.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+button{
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(220, 16, 70);
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+button:hover{
+    filter: brightness(90%);
+}
+button:active{
+    transform: scale(0.9);
+}
+@media screen and (max-width=1000px) {
+    .container{
+background-size:cover;
+background-position: center center;
+    }
+}
